@@ -1,0 +1,40 @@
+name: quran_audio_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  just_audio: ^0.9.38
+  scrollable_positioned_list: ^0.3.8
+  diacritic: ^0.1.3
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.4
+
+# 🔽 Splash ekranı ayarı (BU bir top-level config; dev_dependencies ile karışmasın)
+flutter_native_splash:
+  color: "#36D1DC"
+  image: assets/images/splash_icon.png
+  android_12:
+    color: "#36D1DC"
+    image: assets/images/splash_icon.png
+  # branding: assets/images/branding.png   # (opsiyonel alt marka)
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/splash_icon.png
+    # İstersen arka plan görsellerini de ekleyebilirsin (dosyaları koyduysan yorumdan çıkar):
+    # - assets/images/welcome_bg.jpg
+    # - assets/images/welcome_bg_dark.jpg
