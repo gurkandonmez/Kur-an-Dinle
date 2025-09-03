@@ -1,17 +1,47 @@
-# quran_audio_app
+Özellikler
 
-A new Flutter project.
+Sûre listesi: İlk 10’u yükleme + Devamını getir (sayfalama)
 
-## Getting Started
+Akıllı arama: Aksan/şapka/ı-i normalizasyonu (diacritic)
 
-This project is a starting point for a Flutter application.
+Detay ekranı: Ayet listesi, tek tek çalma veya “Tümünü Çal”
 
-A few resources to get you started if this is your first Flutter project:
+Durum etiketi: Mekkî / Medenî ve “X ayet” kutucukları
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+api (ASP.NET Core 8) ──> SQL Server (EF Core) ──> wwwroot/audio/*.mp3
+          ↑
+          └──────── Flutter (Android) — http: 10.0.2.2:{port}
+Backend: ASP.NET Core Web API (.NET 8), EF Core, SQL Server
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Kur-an-Dinle
+Frontend: Flutter (http, just_audio, scrollable_positioned_list, diacritic)
+
+-----------------
+
+Kur-an-Dinle
+
+Flutter + .NET 8 based Qur’an Audio application.
+Browse surahs, search quickly, and play ayahs individually or sequentially. Search is accent-insensitive (e.g., “Yâsîn / Yasin”).
+
+✨ Features
+
+Surah list: First 10 items + Load More pagination
+
+Smart search: Accent/case normalization (diacritic handling)
+
+Detail screen: Ayah list, single play or Play All queue
+
+Status tags: Makkī / Madanī and “X ayahs” as chips
+
+MP3 streaming: Served by .NET API from wwwroot/audio/...
+
+Splash & store art: Auto-generated icon/feature graphic
+
+Architecture
+/api (ASP.NET Core 8) ──> SQL Server (EF Core) ──> wwwroot/audio/*.mp3
+          ↑
+          └──────── Flutter (Android) — http: 10.0.2.2:{port}
+
+
+Backend: ASP.NET Core Web API (.NET 8), EF Core, SQL Server
+
+Frontend: Flutter (http, just_audio, scrollable_positioned_list, diacritic)
