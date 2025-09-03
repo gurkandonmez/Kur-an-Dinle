@@ -111,30 +111,9 @@ Flutter + .NET 8 based **Qur’an Audio** application.
 - `diacritic` + özel dönüşümler ile “Yâsîn / Yasin / yasin” hepsi eşleşir.  
 - Sunucu tarafında aksan/büyük-küçük harf duyarsız collation kullanılabilir (örn. `Turkish_100_CI_AI`).
 
-### 🖼 Ekran Görüntüleri (Öneri)
-`/docs/screenshots/` klasörüne:
-- Hoş geldiniz
-- Sûre listesi (arama açık)
-- Detay (Tümünü Çal)
-- Çalan âyet vurgusu
 
-### 📦 İçerik / Telif
-- MP3/tilavet ve metin kaynaklarının lisansına/iznine uyun. Gerekirse **atıf** ekleyin.
 
-### 🛣 Yol Haritası
-- [ ] Offline indirme/önbellek
-- [ ] Favoriler & kaldığı yerden devam
-- [ ] Meâl & Arapça metin
-- [ ] HTTPS + yapılandırılabilir `API_BASE`
-- [ ] Widget/Foreground service
-
-### 📜 Lisans
-Bu repo için bir lisans seçin (ör. MIT/Apache-2.0).  
-Ses içerikleri ayrı lisans/atıf gerektirebilir.
-
----
-
-## 🇬🇧 English
+## English
 
 ### ✨ Features
 - **Surah list**: First 10 + “Load More” pagination
@@ -239,23 +218,3 @@ Ses içerikleri ayrı lisans/atıf gerektirebilir.
 - With `diacritic` + custom replacements, “Yâsîn / Yasin / yasin” all match.  
 - Optionally implement server-side accent/case-insensitive search (e.g., `Turkish_100_CI_AI` collation).
 
-### 🖼 Screenshots (Suggested)
-Put into `/docs/screenshots/`:
-- Welcome
-- Surah list (with search)
-- Detail (Play All)
-- Playing ayah highlight
-
-### 📦 Content / Rights
-- Ensure audio/text sources are properly **licensed** and allowed for distribution. Add **attribution** if required.
-
-### 🛣 Roadmap
-- [ ] Offline download/cache
-- [ ] Favorites & resume playback
-- [ ] Translation (meāl) & Arabic text
-- [ ] HTTPS + configurable `API_BASE`
-- [ ] Widget/Foreground service
-
-### 📜 License
-Pick a license for this repository (e.g., MIT/Apache-2.0).  
-Audio contents may require **separate licensing/attribution**.
